@@ -7,13 +7,14 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background:linear-gradient(to right, rgb(19, 7, 14), rgb(109, 15, 93));  
+  background:linear-gradient(to right, rgba(77, 77, 77, 0.472), rgb(255, 237, 203));  
 }
 .calculator{
   width:300px;
-  border:2px solid rgb(190, 185, 188);
+  border:4px solid rgb(190, 185, 188);
+  background-color: rgb(221, 221, 221);
   border-radius:5px;
-  box-shadow:0px 3px 15px rgb(182, 167, 167);
+  box-shadow:10px 10px 10px rgb(182, 167, 167);
   padding:15px 10px;
   display:flex;
   flex-direction: column;
@@ -24,6 +25,7 @@ body{
   color:wheat;
 }
 .calculator input{
+  background-color: white;
   width:100%;
   height:70px;
   border-radius:5px;
@@ -48,11 +50,11 @@ body{
   cursor: pointer;
 }
 .calculator button:hover{
-  color:rgb(94, 172, 245);
+  color:rgb(255, 0, 0);
   transform: scale(1.1);
 }
 #equal{
-  background-color:orange;
+  background-color:rgb(255, 0, 0);
 }
 #equal:hover{
   color:rgb(22, 20, 20); 

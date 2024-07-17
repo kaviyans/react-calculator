@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import { type } from '@testing-library/user-event/dist/type';
 
 
  function App() {
@@ -19,7 +20,11 @@ import './App.css';
   }
 
   function Del(){
-    setValue(value.slice(0,-1))
+    if(typeof value === "string"){
+      setValue(value.slice(0,-1));
+    }else{
+      console.log("it is not a string");
+    }
   }
 
   return (
